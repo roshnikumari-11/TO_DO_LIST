@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  /* --primary-color: rgb(120, 120, 246); */
+  --primary-color: rgb(230, 155, 41);
+  --text-color: black;
+  --padding-size: 1rem;
+  /* --bg-color:black; */
+    --bg-color:white;
+  /* --border-todo:2px solid rgb(120, 120, 246); */
+  --border-todo:2px solid rgb(230, 155, 41);
+  /* --input-bg-color:rgb(223, 184, 246); */
+  --input-bg-color:rgb(250, 220, 180);
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    
+}
+
+/* heading section */
+.heading{
+    width: 50%;
+    margin: 30px auto;
+    text-align: center;
+    background:var(--primary-color);
+    color: var(--text-color);
+    border: var(--border-todo);
+    border-radius: 20px;
+    
+}
+
+/* form section */
+form{
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 10px;
+    background:var(--input-bg-color) ;
+    border:1px solid var(--primary-color);
+}
+
+form p{
+    color: red;
+    margin: 0;
+}
+
+.task_input,
+.date_input{
+    width: 100%;
+    height: 15px;
+    margin-bottom: 15px; 
+    padding: 15px;
+    border-radius: 5px;
+    border: var(--border-todo);
+}
+
+.task_btn{
+     display: block;
+    margin: 0 auto;
+    height: 39px;
+    background: var(--input-bg-color);
+    color:var(--primary-color) ;
+    border: var(--border-todo);
+    border-radius: 6px;
+    padding: 5px 20px;
+}
+
+.task_btn:hover{
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-weight:bold;
+}
+
+
+/* table section */
+table{
+    width: 50%;
+    margin: 30px auto;
+    border-collapse: collapse;
+
+}
+
+tr{
+    border-bottom: 1px solid rgb(148, 145, 145);
+
+}
+
+th{
+    font-size: 19px;
+    color: var(--primary-color);
+}
+
+th,td{
+    border: none;
+    height: 30px;
+    padding: 2px;
+}
+
+tr:hover{
+     background-color: rgba(203, 199, 205, 0.3);
+}
+
+.task,
+.date,
+.delete{
+    text-align: center;
+}
+
+.delete a{
+    color: white;
+    background: #a52a2a;
+    padding: 1px 6px;
+    border-radius: 3px;
+    text-decoration: none;
+}
